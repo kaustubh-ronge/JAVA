@@ -1,4 +1,4 @@
-public class Main{
+public class AppendingDigit{
     public static void main(String[] args) {
         int n=-413;
 
