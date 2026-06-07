@@ -6,6 +6,7 @@ public class ValidPalindrome {
         String s = sc.nextLine();
         boolean ans = isPalindrome(s);
         System.out.println(ans);
+        sc.close();
     }
 
     public static boolean isPalindrome(String s) {
