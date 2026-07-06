@@ -33,11 +33,21 @@ public class doublyLL {
 
     public void display() {
         Node tempNode = head;
+
+        Node last = null;
+
         while (tempNode != null) {
             System.out.print(tempNode.val + " -> ");
+            last = tempNode;
             tempNode = tempNode.next;
         }
         System.out.println("END");
+
+        while (last != null) {
+            System.out.print(last.val + " -> ");
+            last = last.prev;
+        }
+        System.out.println("START");
     }
 
     public static void main(String[] args) {
@@ -51,5 +61,4 @@ public class doublyLL {
 
         dll.display();
     }
-
 }
